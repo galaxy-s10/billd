@@ -1,0 +1,10 @@
+{
+  "version": "independent",
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "registry": "https://fe.funnymamu.com/npm/"
+    }
+  }
+}

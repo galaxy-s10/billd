@@ -1,6 +1,7 @@
 {
   "name": "billd",
   "version": "0.0.0",
+  "private": true,
   "description": "",
   "keywords": [],
   "homepage": "http://registry.hsslive.cn/",
@@ -12,7 +13,12 @@
     "url": "https://github.com/galaxy-s10/billd"
   },
   "author": "",
-  "scripts": {},
+  "scripts": {
+    "release": "lerna publish"
+  },
+  "dependencies": {
+    "lerna": "^5.6.1"
+  },
   "publishConfig": {
     "registry": "http://registry.hsslive.cn/"
   }
