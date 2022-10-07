@@ -14,10 +14,27 @@
   },
   "author": "",
   "scripts": {
+    "commit": "cz",
+    "prepare": "husky install",
     "release": "lerna publish"
   },
-  "dependencies": {
-    "lerna": "^5.6.1"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.1",
+    "lerna": "^5.6.1",
+    "lint-staged": "^13.0.3"
   },
   "publishConfig": {
     "registry": "http://registry.hsslive.cn/"

@@ -5,6 +5,9 @@
   "command": {
     "publish": {
       "registry": "https://fe.funnymamu.com/npm/"
+    },
+    "version": {
+      "message": "chore(release): %s"
     }
   }
 }
