@@ -2,6 +2,15 @@
   "version": "independent",
   "npmClient": "pnpm",
   "useWorkspaces": true,
+  "changelog": {
+    "repo":"galaxy-s10/billd",
+    "labels": {
+      "feature": "New Feature",
+      "bug": "Bug Fix"
+    },
+    "cacheDir": ".changelog"
+
+  },
   "command": {
     "publish": {
       "registry": "http://registry.hsslive.cn/"
