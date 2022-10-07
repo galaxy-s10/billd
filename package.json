@@ -17,7 +17,7 @@
     "commit": "cz",
     "prepare": "husky install",
     "release:local": "node ./scripts/release.js",
-    "lerna:publish": "lerna publish"
+    "lerna:publish": "lerna publish --no-push"
   },
   "config": {
     "commitizen": {
