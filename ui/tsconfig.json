@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "lib": ["DOM", "ESNext"],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "outDir": "./outDir"
+  },
+  "include": [
+    "src/**/*",
+    "build-tools/**/*",
+    "components/**/*.js",
+    "components/**/*.jsx",
+    "components/**/*.ts",
+    "components/**/*.tsx"
+  ],
+  "exclude": ["dist/**/*", "es/**/*", "lib/**/*", "demoDist/**/*"]
+}
