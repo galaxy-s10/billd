@@ -1,0 +1,19 @@
+{
+  "name": "billd",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "http://registry.hsslive.cn/",
+  "bugs": {
+    "url": "https://github.com/galaxy-s10/billd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galaxy-s10/billd"
+  },
+  "author": "",
+  "scripts": {},
+  "publishConfig": {
+    "registry": "http://registry.hsslive.cn/"
+  }
+}
