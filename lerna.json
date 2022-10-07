@@ -5,7 +5,7 @@
   "changelog": {
     "repo":"galaxy-s10/billd",
     "labels": {
-      "feature": "New Feature",
+      "feat": "New Feature",
       "bug": "Bug Fix"
     },
     "cacheDir": ".changelog"
