@@ -1,6 +1,6 @@
 {
   "name": "@billd/utils",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Billd's utils",
   "keywords": [
     "billd",
@@ -24,7 +24,5 @@
   "types": "./index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.18.9"
-  },
-  "devDependencies": {},
-  "peerDependencies": {}
+  }
 }
