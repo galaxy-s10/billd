@@ -18,7 +18,7 @@
     "prepare": "husky install",
     "changelog": "lerna-changelog",
     "release:local": "node ./scripts/release.js",
-    "lerna:publish": "lerna publish --no-push --no-git-tag-version"
+    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version"
   },
   "config": {
     "commitizen": {
