@@ -49,5 +49,6 @@
     "ora": "^5",
     "readline": "^1.3.0",
     "semver": "^7.3.7"
-  }
+  },
+  "gitHead": "d81c90ad5de1705e0fa71357245a77acfa4fbfa4"
 }

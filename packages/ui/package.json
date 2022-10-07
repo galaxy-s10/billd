@@ -131,5 +131,6 @@
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.0-3"
-  }
+  },
+  "gitHead": "d81c90ad5de1705e0fa71357245a77acfa4fbfa4"
 }

@@ -24,5 +24,6 @@
   "types": "./index.d.ts",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.18.9"
-  }
+  },
+  "gitHead": "d81c90ad5de1705e0fa71357245a77acfa4fbfa4"
 }

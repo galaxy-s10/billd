@@ -4,7 +4,7 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "registry": "https://fe.funnymamu.com/npm/"
+      "registry": "http://registry.hsslive.cn/"
     },
     "version": {
       "message": "chore(release): %s"
