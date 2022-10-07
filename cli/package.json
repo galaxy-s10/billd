@@ -1,6 +1,6 @@
 {
   "name": "@billd/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cli for quickly create project",
   "keywords": [
     "billd",
@@ -36,7 +36,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {},
   "devDependencies": {
     "commander": "^9.3.0",
     "commitizen": "^4.2.5",
