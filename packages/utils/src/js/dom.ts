@@ -21,11 +21,11 @@ export const getStyle = (ele: Element, styleName: string) => {
  * @return {*}
  */
 export const copyToClipBoard = (text: string): void => {
-  const oInput = document.createElement("input");
+  const oInput = document.createElement('input');
   oInput.value = text;
   document.body.appendChild(oInput);
   oInput.select(); // 选择对象
-  document.execCommand("Copy"); // 执行浏览器复制命令
+  document.execCommand('Copy'); // 执行浏览器复制命令
   oInput.parentElement?.removeChild(oInput);
 };
 
@@ -35,21 +35,21 @@ export const copyToClipBoard = (text: string): void => {
  * @return {*}
  */
 export const getScrollBarSize = () => {
-  const inner = document.createElement("div");
-  inner.style.width = "100%";
-  inner.style.height = "200px";
+  const inner = document.createElement('div');
+  inner.style.width = '100%';
+  inner.style.height = '200px';
 
-  const outer = document.createElement("div");
+  const outer = document.createElement('div');
   const outerStyle = outer.style;
 
-  outerStyle.position = "absolute";
-  outerStyle.top = "0px";
-  outerStyle.left = "0px";
-  outerStyle.pointerEvents = "none";
-  outerStyle.visibility = "hidden";
-  outerStyle.width = "200px";
-  outerStyle.height = "150px";
-  outerStyle.overflow = "hidden";
+  outerStyle.position = 'absolute';
+  outerStyle.top = '0px';
+  outerStyle.left = '0px';
+  outerStyle.pointerEvents = 'none';
+  outerStyle.visibility = 'hidden';
+  outerStyle.width = '200px';
+  outerStyle.height = '150px';
+  outerStyle.overflow = 'hidden';
   console.log(outerStyle.top);
 
   outer.appendChild(inner);
@@ -57,7 +57,7 @@ export const getScrollBarSize = () => {
   document.body.appendChild(outer);
 
   const widthContained = inner.offsetWidth;
-  outer.style.overflow = "scroll";
+  outer.style.overflow = 'scroll';
   let widthScroll = inner.offsetWidth;
 
   if (widthContained === widthScroll) {

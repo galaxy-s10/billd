@@ -26,9 +26,9 @@ export const judgeDevice = () => {
  * @return {*}
  */
 export const isBrowser = () =>
-  typeof window !== "undefined" &&
-  typeof window.document !== "undefined" &&
-  typeof window.document.createElement !== "undefined";
+  typeof window !== 'undefined' &&
+  typeof window.document !== 'undefined' &&
+  typeof window.document.createElement !== 'undefined';
 
 /**
  * @description 判断是否是Safari浏览器
@@ -46,8 +46,8 @@ export const isSafari = () => {
  */
 export const isIe = () => {
   return (
-    navigator.userAgent.indexOf("MSIE") !== -1 ||
-    navigator.userAgent.indexOf("Trident") !== -1
+    navigator.userAgent.indexOf('MSIE') !== -1 ||
+    navigator.userAgent.indexOf('Trident') !== -1
   );
 };
 /**
@@ -55,7 +55,7 @@ export const isIe = () => {
  * @return {*}
  */
 export const isFirefox = () => {
-  return navigator.userAgent.indexOf("Firefox") !== -1;
+  return navigator.userAgent.indexOf('Firefox') !== -1;
 };
 
 /**
@@ -65,8 +65,8 @@ export const isFirefox = () => {
 export const isSupportWebp = () => {
   return (
     document
-      .createElement("canvas")
-      .toDataURL("image/webp")
-      .indexOf("data:image/webp") === 0
+      .createElement('canvas')
+      .toDataURL('image/webp')
+      .indexOf('data:image/webp') === 0
   );
 };

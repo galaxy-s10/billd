@@ -1,7 +1,7 @@
-const { promisify } = require("util");
-const ora = require("ora");
+const { promisify } = require('util');
+const ora = require('ora');
 
-const downloadRepo = promisify(require("download-git-repo"));
+const downloadRepo = promisify(require('download-git-repo'));
 
 const download = async (repo, dest) => {
   const process = ora(`git clone ${repo}, please wait...`);

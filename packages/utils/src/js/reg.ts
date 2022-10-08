@@ -4,13 +4,13 @@
  * @param {*} type
  * @return {*}
  */
-export const regVerify = (str: string, type: "phone" | "email") => {
+export const regVerify = (str: string, type: 'phone' | 'email') => {
   try {
     switch (type) {
-      case "email":
+      case 'email':
         // https://ihateregex.io/expr/email
         return /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/.test(str);
-      case "phone":
+      case 'phone':
         return /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/.test(
           str
         );

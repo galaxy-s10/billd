@@ -1,7 +1,7 @@
-const path = require("path");
-const { execSync } = require("child_process");
-const pkg = require("../package.json");
-const { chalkSUCCESS, chalkERROR, chalkINFO } = require("../utils/chalkTip");
+const path = require('path');
+const { execSync } = require('child_process');
+const pkg = require('../package.json');
+const { chalkSUCCESS, chalkERROR, chalkINFO } = require('../utils/chalkTip');
 
 // WARN: yrm切换镜像的时候，会同步切换npm的镜像！但是nrm切换镜像却不会切换yarn的镜像！
 // 当使用npm镜像为npm，但是yarn镜像为taobao或者cnpm的时候，但是yarn run mypublish有时候会成功？
@@ -26,11 +26,11 @@ const { chalkSUCCESS, chalkERROR, chalkINFO } = require("../utils/chalkTip");
 try {
   console.log(chalkINFO(`开始发布线上${pkg.name}@${pkg.version}...`));
   // 如果进程超时或有非零退出代码，execSync将抛出Error 对象
-  execSync(`git push origin v${pkg.version}`, { stdio: "inherit" });
-  execSync(`git push`, { stdio: "inherit" });
-  execSync("npm publish", {
-    stdio: "inherit",
-    cwd: path.resolve(__dirname, "../"),
+  execSync(`git push origin v${pkg.version}`, { stdio: 'inherit' });
+  execSync(`git push`, { stdio: 'inherit' });
+  execSync('npm publish', {
+    stdio: 'inherit',
+    cwd: path.resolve(__dirname, '../'),
   });
   console.log(
     chalkSUCCESS(`！！！发布线上${pkg.name}@${pkg.version}成功！！！`)

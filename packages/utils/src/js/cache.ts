@@ -69,7 +69,7 @@ export class CacheModel {
   setStorageExp = (key: string, value: any, expires: number) => {
     try {
       if ([key, value, expires].includes(undefined)) {
-        throw new Error("请检查传入的参数!");
+        throw new Error('请检查传入的参数!');
       }
       const createTime = +new Date();
       const expireTime = createTime + expires * 60 * 60 * 1000;

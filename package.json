@@ -13,11 +13,14 @@
   },
   "author": "",
   "scripts": {
-    "commit": "cz",
-    "prepare": "husky install",
     "changelog": "node ./scripts/genChangelog.js",
-    "release": "node ./scripts/release.js",
-    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version --yes"
+    "commit": "cz",
+    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version --yes",
+    "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:fix": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
+    "prepare": "husky install",
+    "prettier": "prettier --write *",
+    "release": "node ./scripts/release.js"
   },
   "config": {
     "commitizen": {

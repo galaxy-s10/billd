@@ -4,12 +4,12 @@
  */
 export const getUrlParams = () => {
   const url = window.location.href;
-  const str = url.split("?")[1];
+  const str = url.split('?')[1];
   const obj: any = {};
   if (str) {
-    const keys = str.split("&");
+    const keys = str.split('&');
     keys.forEach((item) => {
-      const arr = item.split("=");
+      const arr = item.split('=');
       obj[arr[0]] = arr[1];
     });
   }

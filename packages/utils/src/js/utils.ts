@@ -5,7 +5,7 @@
  */
 export const deleteUseLessObjectKey = (obj: any) => {
   Object.keys(obj).forEach((key) => {
-    if ([null, undefined, NaN, ""].includes(obj[key])) {
+    if ([null, undefined, NaN, ''].includes(obj[key])) {
       delete obj[key];
     }
   });
@@ -21,7 +21,7 @@ export const deleteUseLessObjectKey = (obj: any) => {
 export const replaceKeyFromValue = (str: string, obj: object) => {
   let res = str;
   Object.keys(obj).forEach((v) => {
-    res = res.replace(new RegExp(`{${v}}`, "ig"), obj[v]);
+    res = res.replace(new RegExp(`{${v}}`, 'ig'), obj[v]);
   });
   return res;
 };
@@ -33,27 +33,27 @@ export const replaceKeyFromValue = (str: string, obj: object) => {
 export const judgeType = (
   obj: any
 ):
-  | "boolean"
-  | "number"
-  | "string"
-  | "function"
-  | "array"
-  | "date"
-  | "regExp"
-  | "undefined"
-  | "null"
-  | "object" => {
+  | 'boolean'
+  | 'number'
+  | 'string'
+  | 'function'
+  | 'array'
+  | 'date'
+  | 'regExp'
+  | 'undefined'
+  | 'null'
+  | 'object' => {
   const map = {
-    "[object Boolean]": "boolean",
-    "[object Number]": "number",
-    "[object String]": "string",
-    "[object Function]": "function",
-    "[object Array]": "array",
-    "[object Date]": "date",
-    "[object RegExp]": "regExp",
-    "[object Undefined]": "undefined",
-    "[object Null]": "null",
-    "[object Object]": "object",
+    '[object Boolean]': 'boolean',
+    '[object Number]': 'number',
+    '[object String]': 'string',
+    '[object Function]': 'function',
+    '[object Array]': 'array',
+    '[object Date]': 'date',
+    '[object RegExp]': 'regExp',
+    '[object Undefined]': 'undefined',
+    '[object Null]': 'null',
+    '[object Object]': 'object',
   };
   return map[Object.prototype.toString.call(obj)];
 };
@@ -67,7 +67,7 @@ export const judgeType = (
 export const toKebabCase = (input: string): string =>
   input.replace(
     /[A-Z]/g,
-    (val, index) => (index === 0 ? "" : "-") + val.toLowerCase()
+    (val, index) => (index === 0 ? '' : '-') + val.toLowerCase()
   );
 
 /**
@@ -216,5 +216,5 @@ export const generateUuid = () => {
   const tempUrl = URL.createObjectURL(new Blob());
   const uuid = tempUrl.toString(); // blob:null/9d24f135-3e33-46b7-b51f-dc5b8121d60a
   URL.revokeObjectURL(tempUrl);
-  return uuid.split("/")[1];
+  return uuid.split('/')[1];
 };

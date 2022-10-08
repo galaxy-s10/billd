@@ -1,6 +1,6 @@
 // exec是对spawn的封装，spawn更为底层
-const { exec, spawn } = require("child_process");
-const execa = require("execa");
+const { exec, spawn } = require('child_process');
+const execa = require('execa');
 
 /**
  * 执行终端命令相关的代码
@@ -10,7 +10,7 @@ const commandSpawn = (...args) => {
     const childProcess = spawn(...args);
     childProcess.stdout.pipe(process.stdout);
     childProcess.stderr.pipe(process.stderr);
-    childProcess.on("close", () => {
+    childProcess.on('close', () => {
       resolve();
     });
   });

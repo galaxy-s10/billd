@@ -24,8 +24,8 @@ export const getRandomOne = (arr: any[]) =>
  * @return {*}
  */
 export const getRandomString = (length: number): string => {
-  const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  let res = "";
+  const str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let res = '';
   for (let i = 0; i < length; i += 1) {
     res += str.charAt(getRangeRandom(0, str.length - 1));
   }
@@ -39,6 +39,6 @@ export const getRandomString = (length: number): string => {
  * @return {*}
  */
 export const getRandomInt = (length: number) => {
-  if (length > 16 || length < 1) throw new Error("length的范围：[1,16]");
+  if (length > 16 || length < 1) throw new Error('length的范围：[1,16]');
   return +`${Math.random()}`.slice(2, 2 + length);
 };
