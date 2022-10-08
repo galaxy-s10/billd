@@ -3,7 +3,8 @@ const path = require("path");
 const { execSync } = require("child_process");
 
 async function genNewRelease() {
-  const res = execSync("lerna-changelog");
+  const nextVersion = require("../lerna.json").version;
+  const res = execSync("lerna-changelog --next-version " + nextVersion);
   return res.toString();
 }
 

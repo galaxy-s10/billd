@@ -58,6 +58,9 @@ const selectReleaseVersion = async () => {
     // 更新lerna.json和packages/*的package.json
     updatePackageJSON();
 
+    // 生成changelog
+    execSync(`npm run changelog`, { stdio: "inherit" });
+
     // git commit
     execSync(`git add .`, { stdio: "inherit" });
     execSync(`git commit -m 'chore(release): v${targetVersion}'`, {
