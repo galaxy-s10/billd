@@ -1,4 +1,18 @@
 
+## 0.0.4 (2022-10-08)
+
+#### :memo: Documentation
+* `utils`
+  * [#9](https://github.com/galaxy-s10/billd/pull/9) docs(custom): test ([@galaxy-s10](https://github.com/galaxy-s10))
+* Other
+  * [#8](https://github.com/galaxy-s10/billd/pull/8) docs(custom): 11 ([@galaxy-s10](https://github.com/galaxy-s10))
+
+#### Committers: 1
+- shuisheng ([@galaxy-s10](https://github.com/galaxy-s10))
+
+
+
+
 ## 0.0.3 (2022-10-08)
 
 #### :memo: Documentation
