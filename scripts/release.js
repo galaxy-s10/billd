@@ -8,7 +8,7 @@ const semver = require("semver");
 const { chalkSUCCESS, chalkERROR, chalkINFO } = require("./chalkTip");
 const { updatePackageJSON } = require("./update");
 
-const { name: pkgName, version: currentVersion } = readJSONSync("package.json"); // 项目根目录的package.json
+const { name: pkgName, version: currentVersion } = readJSONSync("lerna.json"); // 项目根目录的lerna.json
 
 // scripts/release.js只是实现了release-it的基本功能
 
@@ -33,7 +33,7 @@ const selectReleaseVersion = async () => {
       choices: versionChoices.map((i) => `${i} (${inc(i)})`),
     },
   ]);
-  const pkg = readJSONSync(path.resolve(__dirname, "../package.json")); // 项目根目录的package.json
+  const pkg = readJSONSync(path.resolve(__dirname, "../lerna.json")); // 项目根目录的lerna.json
   targetVersion = release.match(/\((.*)\)/)[1];
 
   const { confirmRelease } = await inquirer.prompt([
@@ -48,14 +48,14 @@ const selectReleaseVersion = async () => {
   if (confirmRelease) {
     console.log(chalkINFO(`开始本地发布${pkg.name}@${targetVersion}...`));
 
-    // 更新根目录的package.json版本号
+    // 更新根目录的lerna.json版本号
     writeJSONSync(
-      "package.json",
+      "lerna.json",
       { ...pkg, version: targetVersion },
       { spaces: 2 }
     );
 
-    // 更新package.json
+    // 更新lerna.json和packages/*的package.json
     updatePackageJSON();
 
     // git commit
@@ -68,6 +68,7 @@ const selectReleaseVersion = async () => {
     execSync(`git tag v${targetVersion}`, { stdio: "inherit" });
   } else {
     console.log(chalkERROR(`取消本地发布${pkg.name}@${targetVersion}！`));
+    throw new Error(`取消本地发布${pkg.name}@${targetVersion}！`);
   }
 };
 
@@ -88,7 +89,7 @@ function gitIsClean() {
 
 (async () => {
   try {
-    await gitIsClean();
+    // await gitIsClean();
     await selectReleaseVersion();
     console.log(chalkSUCCESS(`本地发布${pkgName}@${targetVersion}成功！`));
   } catch (error) {

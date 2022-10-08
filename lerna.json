@@ -1,9 +1,9 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "changelog": {
-    "repo":"galaxy-s10/billd",
+    "repo": "galaxy-s10/billd",
     "labels": {
       "feat": ":rocket: New Feature",
       "bug": ":bug: Bug Fix",
