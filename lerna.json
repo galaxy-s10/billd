@@ -5,11 +5,13 @@
   "changelog": {
     "repo":"galaxy-s10/billd",
     "labels": {
-      "feat": "New Feature",
-      "bug": "Bug Fix"
+      "feat": ":rocket: New Feature",
+      "bug": ":bug: Bug Fix",
+      "doc": ":memo: Documentation",
+      "internal": ":house: Internal",
+      "breaking": ":boom: Breaking Change"
     },
     "cacheDir": ".changelog"
-
   },
   "command": {
     "publish": {
