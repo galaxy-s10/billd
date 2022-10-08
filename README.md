@@ -21,3 +21,5 @@ registry 的地址是由[verdaccio](https://verdaccio.org)搭建，地址：[htt
 ## 开发
 
 当新增或者修改扩展时，使用`lerna publish`进行发布，此时需要设置版本号，版本号的规范严格遵循`semver`规范，具体可[参考这里](https://semver.org/spec/v2.0.0.html)
+
+# test
