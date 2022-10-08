@@ -1,3 +1,15 @@
+
+## 0.0.3 (2022-10-08)
+
+#### :memo: Documentation
+* `cli`, `ui`, `utils`
+  * [#7](https://github.com/galaxy-s10/billd/pull/7) Feat2 ([@galaxy-s10](https://github.com/galaxy-s10))
+
+#### Committers: 1
+- shuisheng ([@galaxy-s10](https://github.com/galaxy-s10))
+
+
+
 ## 0.0.2 (2022-10-08)
 
 #### :rocket: New Feature
