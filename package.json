@@ -15,7 +15,7 @@
   "scripts": {
     "commit": "cz",
     "prepare": "husky install",
-    "changelog": "lerna-changelog",
+    "changelog": "node ./scripts/genChangelog.js",
     "release": "node ./scripts/release.js",
     "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version --yes"
   },
