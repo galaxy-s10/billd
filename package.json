@@ -1,6 +1,5 @@
 {
   "name": "billd",
-  "version": "0.0.0",
   "private": true,
   "description": "",
   "keywords": [],
@@ -17,8 +16,8 @@
     "commit": "cz",
     "prepare": "husky install",
     "changelog": "lerna-changelog",
-    "release:local": "node ./scripts/release.js",
-    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version"
+    "release": "node ./scripts/release.js",
+    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version --yes"
   },
   "config": {
     "commitizen": {
