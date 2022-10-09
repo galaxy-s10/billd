@@ -25,7 +25,7 @@
     "prettier": "prettier --write *",
     "release": "node ./scripts/release.js",
     "release:local": "node ./scripts/release.js --local",
-    "version": "npm run changelog"
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "config": {
     "commitizen": {

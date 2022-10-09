@@ -18,11 +18,11 @@
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
-  "main": "./index.cjs",
-  "module": "./index.mjs",
-  "types": "./index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist/*"
+    "dist"
   ],
   "scripts": {
     "build": "rimraf ./dist && rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
