@@ -1,6 +1,6 @@
 {
   "name": "@billd/utils",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Billd's utils",
   "keywords": [
     "billd",
@@ -31,5 +31,5 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.18.9"
   },
-  "gitHead": "d81c90ad5de1705e0fa71357245a77acfa4fbfa4"
+  "gitHead": "ca0b4d1b034babe26ae060d19ae7d77e3cf89935"
 }
