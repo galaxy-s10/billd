@@ -1,11 +1,29 @@
 # 简介
 
-开箱即用的 js 和 css，纯 JavaScript 实现，无依赖!
+开箱即用的 utils，纯 JavaScript 实现，无依赖！
 
 # 安装
 
+安装@billd/\*项目时，需要先配置 registry：
+
+**yarn**
+
+```
+yarn config set @billd:registry http://registry.hsslive.cn/
+```
+
+**npm**
+
+```
+npm config set @billd:registry http://registry.hsslive.cn/
+```
+
+安装：
+
 ```sh
 npm install @billd/utils
+# or
+yarn install @billd/utils
 ```
 
 # 文档

@@ -19,6 +19,7 @@
   "scripts": {
     "changelog": "node ./scripts/genChangelog.js",
     "commit": "cz",
+    "publish:normal": "lerna publish",
     "publish:online": "lerna publish --dist-tag latest",
     "publish:local": "lerna publish --force-publish --no-push --no-git-tag-version --yes",
     "version": "npm run changelog",
