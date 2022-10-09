@@ -7,13 +7,14 @@
     "ui",
     "vue2"
   ],
-  "homepage": "http://project.hsslive.cn/billd/",
+  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/ui",
   "bugs": {
     "url": "https://github.com/galaxy-s10/billd/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/galaxy-s10/billd"
+    "url": "https://github.com/galaxy-s10/billd",
+    "directory": "packages/ui"
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
@@ -35,9 +36,9 @@
     "changelog:first": "conventional-changelog -n ./changelog.option.js -p eslint -i CHANGELOG.md -s -r 0",
     "commit": "cz",
     "compile": "gulp -f ./build-tools/gulpfile.js",
+    "compile:dist": "gulp -f ./build-tools/gulpfile.js dist",
     "compile:es": "gulp -f ./build-tools/gulpfile.js es",
     "compile:lib": "gulp -f ./build-tools/gulpfile.js lib",
-    "compile:dist": "gulp -f ./build-tools/gulpfile.js dist",
     "dev": "webpack serve --config ./build-tools/webpack/webpack.common.js --env development",
     "dev:dashboard": "webpack-dashboard  -- webpack  serve --config ./build-tools/webpack/webpack.common.js --env development",
     "dist": "cross-env BUILD_DEMO=ture webpack --config ./build-tools/webpack/webpack.common.js --env production",

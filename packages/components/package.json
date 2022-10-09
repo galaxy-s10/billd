@@ -1,20 +1,19 @@
 {
-  "name": "@billd/utils",
+  "name": "@billd/components",
   "version": "0.0.4",
-  "description": "Billd's utils",
+  "description": "Billd's components",
   "keywords": [
     "billd",
-    "utils",
-    "javascript"
+    "components"
   ],
-  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/utils",
+  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/components",
   "bugs": {
     "url": "https://github.com/galaxy-s10/billd/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/galaxy-s10/billd",
-    "directory": "packages/utils"
+    "directory": "packages/components"
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",

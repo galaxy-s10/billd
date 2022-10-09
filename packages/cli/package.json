@@ -11,16 +11,17 @@
     "webpack5",
     "template"
   ],
-  "homepage": "https://github.com/galaxy-s10/billd",
+  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/cli",
   "bugs": {
     "url": "https://github.com/galaxy-s10/billd/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/galaxy-s10/billd"
+    "url": "https://github.com/galaxy-s10/billd",
+    "directory": "packages/cli"
   },
-  "license": "ISC",
-  "author": "galaxy-s10",
+  "license": "MIT",
+  "author": "shuisheng <https://github.com/galaxy-s10>",
   "bin": {
     "billd": "bin/billd.js"
   },

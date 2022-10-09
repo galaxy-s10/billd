@@ -1,20 +1,20 @@
 {
-  "name": "@billd/utils",
+  "name": "@billd/hooks",
   "version": "0.0.4",
-  "description": "Billd's utils",
+  "description": "Billd's hooks",
   "keywords": [
     "billd",
-    "utils",
-    "javascript"
+    "hooks",
+    "react"
   ],
-  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/utils",
+  "homepage": "http://registry.hsslive.cn/-/web/detail/@billd/hooks",
   "bugs": {
     "url": "https://github.com/galaxy-s10/billd/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/galaxy-s10/billd",
-    "directory": "packages/utils"
+    "directory": "packages/hooks"
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
@@ -30,6 +30,5 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.18.9"
-  },
-  "gitHead": "d81c90ad5de1705e0fa71357245a77acfa4fbfa4"
+  }
 }
