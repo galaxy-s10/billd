@@ -17,7 +17,7 @@ import type { Options as ESBuildOptions } from 'rollup-plugin-esbuild';
 const watch = process.argv.includes('--watch');
 
 const external = [...Object.keys(pkg.dependencies || {})].map((name) =>
-  RegExp(`^utils($|/)`)
+  RegExp(`^${name}($|/)`)
 );
 
 // my-name转化为MyName

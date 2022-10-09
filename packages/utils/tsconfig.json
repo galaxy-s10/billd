@@ -31,7 +31,7 @@
   },
   // "exclude": ["**/*.d.ts"],
   "include": [
-    "src/**/*.ts",
+    "./src/**/*.ts",
     "rollup.config.ts" //https://rollupjs.org/guide/en/#--configplugin-plugin
   ] // 仅仅匹配这些文件
 }
