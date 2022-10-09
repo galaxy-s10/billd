@@ -46,7 +46,7 @@ const selectReleaseVersion = async () => {
   ]);
 
   if (confirmRelease) {
-    console.log(chalkINFO(`开始本地发布${pkg.name}@${targetVersion}...`));
+    console.log(chalkINFO(`开始本地发布版本：v${targetVersion}...`));
 
     // 更新根目录的lerna.json版本号
     writeJSONSync(
@@ -56,10 +56,10 @@ const selectReleaseVersion = async () => {
     );
 
     // 更新lerna.json和packages/*的package.json
-    updatePackageJSON();
+    // updatePackageJSON();
 
     // 生成changelog
-    execSync(`npm run changelog`, { stdio: 'inherit' });
+    // execSync(`npm run changelog`, { stdio: 'inherit' });
 
     // git commit
     execSync(`git add .`, { stdio: 'inherit' });
@@ -70,8 +70,8 @@ const selectReleaseVersion = async () => {
     // git tag
     execSync(`git tag v${targetVersion}`, { stdio: 'inherit' });
   } else {
-    console.log(chalkERROR(`取消本地发布${pkg.name}@${targetVersion}！`));
-    throw new Error(`取消本地发布${pkg.name}@${targetVersion}！`);
+    console.log(chalkERROR(`取消本地发布版本：v${targetVersion}！`));
+    throw new Error(`取消本地发布版本：v${targetVersion}！`);
   }
 };
 

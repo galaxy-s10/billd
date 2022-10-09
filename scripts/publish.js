@@ -19,13 +19,13 @@ const pkg = require('../lerna.json');
 // });
 
 // if (!result.status) {
-//   console.log(chalkSUCCESS(`！！！发布线上${pkg.name}@${pkg.version}成功！！！`));
+//   console.log(chalkSUCCESS(`！！！发布线上版本：v${pkg.name}@${pkg.version}成功！！！`));
 // } else {
-//   console.log(chalkERROR(`！！！发布线上${pkg.name}@${pkg.version}失败！！！`));
+//   console.log(chalkERROR(`！！！发布线上版本：v${pkg.name}@${pkg.version}失败！！！`));
 // }
 
 try {
-  console.log(chalkINFO(`开始发布线上${pkg.version}...`));
+  console.log(chalkINFO(`开始发布线上版本：v${pkg.version}...`));
   // 如果进程超时或有非零退出代码，execSync将抛出Error 对象
   execSync(`git push origin v${pkg.version}`, { stdio: 'inherit' });
   execSync(`git push`, { stdio: 'inherit' });
@@ -34,9 +34,9 @@ try {
   //   cwd: path.resolve(__dirname, "../"),
   // });
   execSync(`npm run lerna:publish`, { stdio: 'inherit' });
-  console.log(chalkSUCCESS(`！！！发布线上${pkg.version}成功！！！`));
+  console.log(chalkSUCCESS(`！！！发布线上版本：v${pkg.version}成功！！！`));
 } catch (error) {
-  console.log(chalkERROR(`！！！发布线上${pkg.version}失败！！！`));
+  console.log(chalkERROR(`！！！发布线上版本：v${pkg.version}失败！！！`));
   console.log(error);
-  console.log(chalkERROR(`！！！发布线上${pkg.version}失败！！！`));
+  console.log(chalkERROR(`！！！发布线上版本：v${pkg.version}失败！！！`));
 }

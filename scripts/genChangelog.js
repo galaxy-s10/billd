@@ -1,13 +1,19 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 
 async function genNewRelease() {
   const nextVersion = require('../lerna.json').version;
-  const res = execSync(`lerna-changelog --next-version ${nextVersion}`, {
-    // stdio: 'inherit',
+  // const res = execSync(`lerna-changelog --next-version ${nextVersion}`, {
+  //   // stdio: 'inherit',
+  // });
+  const res = spawnSync(`lerna-changelog`, ['--next-version', nextVersion], {
+    stdio: 'inherit',
   });
-  return res;
+  if (res.status) {
+    process.exit(res.status);
+  }
+  return res.stdout;
 }
 
 const gen = (module.exports = async () => {
@@ -22,7 +28,4 @@ const gen = (module.exports = async () => {
   }
 });
 
-gen().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+gen();

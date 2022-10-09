@@ -19,7 +19,9 @@
   "scripts": {
     "changelog": "node ./scripts/genChangelog.js",
     "commit": "cz",
-    "lerna:publish": "lerna publish --force-publish --no-push --no-git-tag-version --yes",
+    "publish:online": "lerna publish --dist-tag latest",
+    "publish:local": "lerna publish --force-publish --no-push --no-git-tag-version --yes",
+    "version": "npm run changelog",
     "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
     "lint:fix": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install",
