@@ -19,15 +19,13 @@
   "scripts": {
     "changelog": "node ./scripts/genChangelog.js",
     "commit": "cz",
-    "publish:normal": "lerna publish",
-    "publish:online": "lerna publish --dist-tag latest",
-    "publish:local": "lerna publish --force-publish --no-push --no-git-tag-version --yes",
-    "version": "npm run changelog",
     "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
     "lint:fix": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install",
     "prettier": "prettier --write *",
-    "release": "node ./scripts/release.js"
+    "release": "node ./scripts/release.js",
+    "release:local": "node ./scripts/release.js --local",
+    "version": "npm run changelog"
   },
   "config": {
     "commitizen": {
