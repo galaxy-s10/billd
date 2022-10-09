@@ -54,8 +54,26 @@ billd-ui 组件库将 icon 组件单独抽离出来成一个独立的组件库�
 
 # 安装
 
+安装@billd/\*项目时，需要先配置 registry：
+
+**yarn**
+
+```
+yarn config set @billd:registry http://registry.hsslive.cn/
+```
+
+**npm**
+
+```
+npm config set @billd:registry http://registry.hsslive.cn/
+```
+
+安装：
+
 ```sh
-npm i billd-ui --save
+npm install @billd/ui
+# or
+yarn add @billd/ui
 ```
 
 # 使用

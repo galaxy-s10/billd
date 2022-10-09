@@ -40,8 +40,26 @@
 
 # 安装
 
+安装@billd/\*项目时，需要先配置 registry：
+
+**yarn**
+
+```
+yarn config set @billd:registry http://registry.hsslive.cn/
+```
+
+**npm**
+
+```
+npm config set @billd:registry http://registry.hsslive.cn/
+```
+
+安装：
+
 ```sh
-npm i billd-cli -g
+npm install @billd/cli -g
+# or
+yarn add @billd/cli -g
 ```
 
 # 使用

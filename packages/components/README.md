@@ -23,7 +23,7 @@ npm config set @billd:registry http://registry.hsslive.cn/
 ```sh
 npm install @billd/components
 # or
-yarn install @billd/components
+yarn add @billd/components
 ```
 
 # 文档

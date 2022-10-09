@@ -23,7 +23,7 @@ npm config set @billd:registry http://registry.hsslive.cn/
 ```sh
 npm install @billd/utils
 # or
-yarn install @billd/utils
+yarn add @billd/utils
 ```
 
 # 文档

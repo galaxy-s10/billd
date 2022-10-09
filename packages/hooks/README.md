@@ -23,7 +23,7 @@ npm config set @billd:registry http://registry.hsslive.cn/
 ```sh
 npm install @billd/hooks
 # or
-yarn install @billd/hooks
+yarn add @billd/hooks
 ```
 
 # 使用

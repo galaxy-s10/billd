@@ -1,6 +1,6 @@
-# 私有仓库
+# billd 私有仓库
 
-安装@billd/\*项目时，需要先配置 registry：
+安装或者发布@billd/\*项目时，需要先配置 registry：
 
 **yarn**
 
@@ -16,8 +16,18 @@ npm config set @billd:registry http://registry.hsslive.cn/
 
 registry 的地址是由[verdaccio](https://verdaccio.org)搭建，地址：[http://registry.hsslive.cn/](http://registry.hsslive.cn/)可直接访问
 
-项目发布的地址也会是在[http://registry.hsslive.cn/](http://registry.hsslive.cn/)上，需要自行配置发布地址
+# 发布 registry
 
-## 开发.
+> 只会发布 registry，不会发布远程的 github 仓库
 
-当新增或者修改扩展时，使用`lerna publish`进行发布，此时需要设置版本号，版本号的规范严格遵循`semver`规范，具体可[参考这里](https://semver.org/spec/v2.0.0.html)
+```sh
+pnpm run release:local
+```
+
+# 发布 registry 和 github
+
+> 发布 registry 且发布远程的 github 仓库
+
+```sh
+pnpm run release
+```
