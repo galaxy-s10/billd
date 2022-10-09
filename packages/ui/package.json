@@ -43,7 +43,7 @@
     "dev:dashboard": "webpack-dashboard  -- webpack  serve --config ./build-tools/webpack/webpack.common.js --env development",
     "dist": "cross-env BUILD_DEMO=ture webpack --config ./build-tools/webpack/webpack.common.js --env production",
     "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
-    "lint:fix": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:fix": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue --fix",
     "prepare1": "husky install",
     "prettier": "prettier --write *",
     "release:local": "node ./scripts/release.js",

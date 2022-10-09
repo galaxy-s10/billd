@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true, //在文件名中强制使用一致的大小写
     "skipLibCheck": true, // 跳过d.ts声明文件的类型检查。
     "baseUrl": "./",
+    // "allowJs": true,
     // "sourceMap": true, // 是否生成sourceMap
     // "noEmitOnError": false,
     // "declaration": true, // 生成.d.ts文件
@@ -29,9 +30,11 @@
       "module": "CommonJS"
     }
   },
-  // "exclude": ["**/*.d.ts"],
+  "exclude": ["dist/**/*"], // 排查include里的文件
   "include": [
     "./src/**/*.ts",
+    "./babel.config.js",
+    "./.eslintrc.js",
     "rollup.config.ts" //https://rollupjs.org/guide/en/#--configplugin-plugin
   ] // 仅仅匹配这些文件
 }

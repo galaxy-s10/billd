@@ -38,20 +38,30 @@
 
 **yarn**
 
-```
+```sh
 yarn config set @billd:registry http://registry.hsslive.cn/
 ```
 
 **npm**
 
-```
+```sh
 npm config set @billd:registry http://registry.hsslive.cn/
+# or
+npm set @billd:registry http://registry.hsslive.cn/
+```
+
+**pnpm**
+
+```sh
+pnpm set registry http://registry.hsslive.cn/
 ```
 
 安装：
 
 ```sh
 npm install @billd/cli -g
+# or
+pnpm install @billd/cli -g
 # or
 yarn add @billd/cli -g
 ```

@@ -25,6 +25,8 @@
     "dist"
   ],
   "scripts": {
+    "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:fix": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue --fix",
     "build": "rimraf ./dist && rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "prepublish": "npm run build"
   },
