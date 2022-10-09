@@ -12,7 +12,7 @@ const local = process.argv.includes('--local');
         { stdio: 'inherit' }
       );
     } else {
-      execSync(`lerna publish`, { stdio: 'inherit' });
+      execSync(`lerna publish --force-publish`, { stdio: 'inherit' });
     }
     console.log(chalkSUCCESS(`发布成功！`));
   } catch (error) {
