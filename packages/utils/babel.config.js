@@ -23,11 +23,21 @@ module.exports = {
          * false: 默认值就是false,不用任何的polyfill相关的代码
          * usage: 代码中需要哪些polyfill, 就引用相关的api
          * entry: 手动在入口文件中导入 core-js/regenerator-runtime, 根据目标浏览器引入所有对应的polyfill
+         * 注意，这里引入的polyfill都是基于全局的（类似：import 'core-js/modules/es6.regexp.split.js';），适合构建应用，但是在构建库的时候，请使
+         * 用@babel/plugin-transform-runtime，它是基于运行时的（类
+         * 似：import _indexOfInstanceProperty from '@babel/runtime-corejs3/core-js-stable/instance/index-of';），不会污染全局。
          */
         // useBuiltIns: 'usage',
         // corejs: '3',
+        /**
+         * targets会读取项目里面的.browserslistrc文件，也可以在这里直接设置
+         */
+        // targets: '>0.25%, last 2 version, not dead',
+        /**
+         * modules: 'commonjs', 'amd', 'umd', 'systemjs'，'auto'(默认)
+         * modules也可以设置false，这样会保留esmodule
+         */
         // modules: false,
-        // modules: 'auto', // modules设置成commonjs后，路由懒加载就没了。
         // modules: 'commonjs', // https://github.com/vuejs/vue-cli/blob/HEAD/packages/@vue/babel-preset-app/index.js#L226
       },
     ],

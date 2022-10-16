@@ -30,7 +30,7 @@
       "module": "CommonJS"
     }
   },
-  "exclude": ["dist/**/*"], // 排查include里的文件
+  "exclude": ["dist/**/*"], // 排除include里的文件
   "include": [
     "./src/**/*.ts",
     "./babel.config.js",
