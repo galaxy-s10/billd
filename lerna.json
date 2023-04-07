@@ -15,7 +15,7 @@
   },
   "command": {
     "publish": {
-      "registry": "http://registry.hsslive.cn/"
+      "registry": "https://registry.hsslive.cn/"
     },
     "version": {
       "message": "chore(release): %s"

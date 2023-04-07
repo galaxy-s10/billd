@@ -2,15 +2,15 @@
 
 项目使用了[lerna.js](https://lerna.js.org)管理，项目组织叫@billd
 
-registry 的地址是由[verdaccio](https://verdaccio.org)搭建，地址：[http://registry.hsslive.cn/](http://registry.hsslive.cn/) 可直接访问
+registry 的地址是由[verdaccio](https://verdaccio.org)搭建，地址：[https://registry.hsslive.cn/](https://registry.hsslive.cn/) 可直接访问
 
-| 包名                                                                           | 简介                    |
-| ------------------------------------------------------------------------------ | ----------------------- |
-| [@billd/cli](http://registry.hsslive.cn/-/web/detail/@billd/cli)               | 拉取项目模板的脚手架    |
-| [@billd/utils](http://registry.hsslive.cn/-/web/detail/@billd/utils)           | 通用 js 方法            |
-| [@billd/components](http://registry.hsslive.cn/-/web/detail/@billd/components) | 通用 js 组件            |
-| [@billd/hooks](http://registry.hsslive.cn/-/web/detail/@billd/hooks)           | react hooks             |
-| [@billd/ui](http://registry.hsslive.cn/-/web/detail/@billd/ui)                 | vue2 组件库（暂未迁移） |
+| 包名                                                                            | 简介                    |
+| ------------------------------------------------------------------------------- | ----------------------- |
+| [@billd/cli](https://registry.hsslive.cn/-/web/detail/@billd/cli)               | 拉取项目模板的脚手架    |
+| [@billd/utils](https://registry.hsslive.cn/-/web/detail/@billd/utils)           | 通用 js 方法            |
+| [@billd/components](https://registry.hsslive.cn/-/web/detail/@billd/components) | 通用 js 组件            |
+| [@billd/hooks](https://registry.hsslive.cn/-/web/detail/@billd/hooks)           | react hooks             |
+| [@billd/ui](https://registry.hsslive.cn/-/web/detail/@billd/ui)                 | vue2 组件库（暂未迁移） |
 
 > 注意：目前虽然私有仓库的服务器是公开的，但是配置了最大用户数为 1（即只有我一个用户），其他人注册不了用户，但可以下载这个私服的包~
 
@@ -21,21 +21,21 @@ registry 的地址是由[verdaccio](https://verdaccio.org)搭建，地址：[htt
 **yarn**
 
 ```
-yarn config set @billd:registry http://registry.hsslive.cn/
+yarn config set @billd:registry https://registry.hsslive.cn/
 ```
 
 **npm**
 
 ```
-npm config set @billd:registry http://registry.hsslive.cn/
+npm config set @billd:registry https://registry.hsslive.cn/
 # or
-npm set @billd:registry http://registry.hsslive.cn/
+npm set @billd:registry https://registry.hsslive.cn/
 ```
 
 **pnpm**
 
 ```
-pnpm set registry http://registry.hsslive.cn/
+pnpm set registry https://registry.hsslive.cn/
 ```
 
 # 发布

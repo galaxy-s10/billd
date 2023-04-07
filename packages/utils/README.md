@@ -9,21 +9,21 @@
 **yarn**
 
 ```sh
-yarn config set @billd:registry http://registry.hsslive.cn/
+yarn config set @billd:registry https://registry.hsslive.cn/
 ```
 
 **npm**
 
 ```sh
-npm config set @billd:registry http://registry.hsslive.cn/
+npm config set @billd:registry https://registry.hsslive.cn/
 # or
-npm set @billd:registry http://registry.hsslive.cn/
+npm set @billd:registry https://registry.hsslive.cn/
 ```
 
 **pnpm**
 
 ```sh
-pnpm set registry http://registry.hsslive.cn/
+pnpm set registry https://registry.hsslive.cn/
 ```
 
 安装：
@@ -38,7 +38,7 @@ yarn add @billd/utils
 
 # 文档
 
-http://project.hsslive.cn/billd-monorepo/modules/utils.html
+https://project.hsslive.cn/billd-monorepo/modules/utils.html
 
 # 使用
 
@@ -59,8 +59,14 @@ console.log(isBrowser());
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
   </head>
   <body>

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://project.hsslive.cn/billd-ui/">
+  <a href="https://project.hsslive.cn/billd-ui/">
     <img
       width="200"
       src="https://resource.hsslive.cn/image/1613141138717Billd.webp"
@@ -23,14 +23,14 @@
 
 # 组件列表
 
-| 名称                                                                       | 支持 |
-| -------------------------------------------------------------------------- | ---- |
-| [icon](http://project.hsslive.cn/billd-ui/component/basic/icon.html)       | ✅   |
-| [modal](http://project.hsslive.cn/billd-ui/component/basic/modal.html)     | ✅   |
-| [switch](http://project.hsslive.cn/billd-ui/component/basic/switch.html)   | ✅   |
-| [loading](http://project.hsslive.cn/billd-ui/component/basic/loading.html) | ✅   |
-| [table](http://project.hsslive.cn/billd-ui/component/basic/table.html)     | ❗   |
-| [message](http://project.hsslive.cn/billd-ui/component/basic/message.html) | ✅   |
+| 名称                                                                        | 支持 |
+| --------------------------------------------------------------------------- | ---- |
+| [icon](https://project.hsslive.cn/billd-ui/component/basic/icon.html)       | ✅   |
+| [modal](https://project.hsslive.cn/billd-ui/component/basic/modal.html)     | ✅   |
+| [switch](https://project.hsslive.cn/billd-ui/component/basic/switch.html)   | ✅   |
+| [loading](https://project.hsslive.cn/billd-ui/component/basic/loading.html) | ✅   |
+| [table](https://project.hsslive.cn/billd-ui/component/basic/table.html)     | ❗   |
+| [message](https://project.hsslive.cn/billd-ui/component/basic/message.html) | ✅   |
 
 # 生态系统
 
@@ -49,21 +49,21 @@ billd-ui 组件库将 icon 组件单独抽离出来成一个独立的组件库�
 **yarn**
 
 ```sh
-yarn config set @billd:registry http://registry.hsslive.cn/
+yarn config set @billd:registry https://registry.hsslive.cn/
 ```
 
 **npm**
 
 ```sh
-npm config set @billd:registry http://registry.hsslive.cn/
+npm config set @billd:registry https://registry.hsslive.cn/
 # or
-npm set @billd:registry http://registry.hsslive.cn/
+npm set @billd:registry https://registry.hsslive.cn/
 ```
 
 **pnpm**
 
 ```sh
-pnpm set registry http://registry.hsslive.cn/
+pnpm set registry https://registry.hsslive.cn/
 ```
 
 安装：

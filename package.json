@@ -6,7 +6,7 @@
     "billd",
     "verdaccio"
   ],
-  "homepage": "http://registry.hsslive.cn/",
+  "homepage": "https://registry.hsslive.cn/",
   "bugs": {
     "url": "https://github.com/galaxy-s10/billd/issues"
   },
@@ -19,6 +19,8 @@
   "scripts": {
     "changelog": "node ./scripts/genChangelog.js",
     "commit": "cz",
+    "copy": "node ./handleGiteeJenkins.js",
+    "dev": "verdaccio --listen 4873 --config ~/.config/verdaccio/config.yaml",
     "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue --resolve-plugins-relative-to .",
     "lint:fix": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue --resolve-plugins-relative-to . --fix",
     "prepare": "husky install",
@@ -45,13 +47,15 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.4",
+    "cross-env": "^7.0.3",
     "esbuild": "^0.15.8",
     "rollup": "^2.77.0",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-esbuild": "^4.10.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "verdaccio": "^5.23.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -78,6 +82,6 @@
     "semver": "^7.3.7"
   },
   "publishConfig": {
-    "registry": "http://registry.hsslive.cn/"
+    "registry": "https://registry.hsslive.cn/"
   }
 }
